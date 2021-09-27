@@ -1,0 +1,52 @@
+html, body, h1, h2, h3, h4, h5, h6, p, div, nav, article, ol, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#extra{
+    display: flex;
+}
+#info{
+    margin: 73px 20px;
+}
+article{
+    margin: 0;
+    display: flex;
+}
+button{ 
+    height: 200px;
+    width: 200px;
+    font-size: 30px;
+    background-color: lightgray;
+    border-radius: 25px;
+    border-width: 5px;
+}
+#squareContainer{
+    margin: 0 auto 100px auto;
+    border: 5px solid black;
+    background-color: lime;
+    border-radius: 10px;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    flex-wrap: wrap;
+}
+.square{
+    list-style-type: none;
+    height: 100px;
+    width: 100px;
+    /* height: 98px;
+    width: 98px;
+    border: 1px solid black; */
+}
+
+.blue{
+    cursor:vertical-text;
+    background: fixed blue url(images/windows.jpeg) top center;
+
+}
+.red{
+    cursor: text;
+    background: fixed red url(images/apple.jpeg) top center;
+}
