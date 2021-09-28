@@ -5,55 +5,57 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Template</title>
         <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=Rubik&family=Montserrat:wght@500&display=swap" rel="stylesheet">
     </head>
     <body>
             <div id="commentBox">
+                <div id="title">
+                    <p>Mr Big Stinky Toes Asks:</p>
+                    <h1>Do Fish Get Thirsty?</h1>
+                </div>
+                
                 <ul id="commentSection">
                     <li class="comment">
                         <div class="commentProfileText">
                             <img class="userPicture" src="images/user.png" alt="User.png">
-                            <p class="commentMessage">hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd </p>
+                            <h2 class="username">The Slippery Sandwich</h2>
+                            <p class="commentMessage">No, Fish actually absorb water through their skin so they don't need to drink water. Meaning, they don't get thirsty because they just drink water all the time.</p>
                         </div>
                         <div class="commentButtons">
-                            <button class="editComment"><img class="clickIcon" src="images/edit.png" alt="Edit comment"></button>
-                            <button class="deleteComment"><img class="clickIcon" src="images/delete.png" alt="Delete comment"></button>
+                            <button class="editButton"><img class="clickIcon" src="images/edit.png" alt="Edit comment"></button>
+                            <button class="deleteButton"><img class="clickIcon" src="images/delete.png" alt="Delete comment"></button>
                         </div>
                     </li>
                     <li class="comment">
                         <div class="commentProfileText">
                             <img class="userPicture" src="images/user.png" alt="User.png">
-                            <p class="commentMessage">hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd </p>
+                            <h2 class="username">Gigabit Nerd</h2>
+                            <p class="commentMessage">Yes, but fish get thirsty for air, not water like us. They must drink air at least once a week or they will die of thirst.</p>
                         </div>
                         <div class="commentButtons">
-                            <button class="editComment"><img class="clickIcon" src="images/edit.png" alt="Edit comment"></button>
-                            <button class="deleteComment"><img class="clickIcon" src="images/delete.png" alt="Delete comment"></button>
+                            <button class="editButton"><img class="clickIcon" src="images/edit.png" alt="Edit comment"></button>
+                            <button class="deleteButton"><img class="clickIcon" src="images/delete.png" alt="Delete comment"></button>
                         </div>
                     </li>
                     <li class="comment">
                         <div class="commentProfileText">
                             <img class="userPicture" src="images/user.png" alt="User.png">
-                            <p class="commentMessage">hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd </p>
+                            <h2 class="username">Guybrush Threepwood</h2>
+                            <p class="commentMessage">🐠</p>
                         </div>
                         <div class="commentButtons">
-                            <button class="editComment"><img class="clickIcon" src="images/edit.png" alt="Edit comment"></button>
-                            <button class="deleteComment"><img class="clickIcon" src="images/delete.png" alt="Delete comment"></button>
+                            <button class="editButton"><img class="clickIcon" src="images/edit.png" alt="Edit comment"></button>
+                            <button class="deleteButton"><img class="clickIcon" src="images/delete.png" alt="Delete comment"></button>
                         </div>
                     </li>
-                    <li class="comment">
-                        <div class="commentProfileText">
-                            <img class="userPicture" src="images/user.png" alt="User.png">
-                            <p class="commentMessage">hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd hello Im a big nerd </p>
-                        </div>
-                        <div class="commentButtons">
-                            <button class="editComment"><img class="clickIcon" src="images/edit.png" alt="Edit comment"></button>
-                            <button class="deleteComment"><img class="clickIcon" src="images/delete.png" alt="Delete comment"></button>
-                        </div>
-                    </li>
-                    
-                    
                 </ul>
+
                 <div id="addComment">
-                    <!-- <img class="button editComment"> -->
+                    <input id="username" type="text" placeholder="Username">
+                    <textarea id="message" type="text" placeholder="Type your message here"></textarea>
+                    <button id="submitButton" type="button"><img class="clickIcon" src="images/submit.png" alt="Submit comment"></button>
                 </div>
             </div>
         <script src="https://code.jquery.com/jquery-latest.min.js"></script>
