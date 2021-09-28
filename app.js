@@ -28,17 +28,10 @@ function colorUsers(){
     }
 }
 
-
-
-
 let username = $('#username');
 let message = $('#message');
 
-
-
-
 colorUsers();
-
 
 $('#submitButton').on('click', function() {
     $('#commentSection').append(`
@@ -54,9 +47,7 @@ $('#submitButton').on('click', function() {
             </div>
         </li>
     `);
-
     colorUsers();
-
 });
 
 $('#commentSection').on('click', '.deleteButton', function(){
@@ -92,14 +83,10 @@ $('#commentSection').on('click', '.saveButton', function(){
     let t = $(this).parents('.commentButtons').prev().children('.editCommentMessage').text();
     // let width = message.width();
     // let height = message.height();
-    // let userWidth = message.prev().width();
-    // let userHeight = message.prev().height();
-    
 
     message.replaceWith(`
         <p class="commentMessage">${message.val()}</p>
     `);
-    // $(parent).prev().children('.editCommentMessage').css("width", (width+'px'));
     
     $(this).replaceWith(`
         <button class="editButton"><img class="clickIcon" src="images/edit.png" alt="Edit comment"></button>

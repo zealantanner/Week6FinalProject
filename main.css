@@ -7,14 +7,19 @@ html, body, h1, h2, h3, h4, h5, h6, p, div, input, textarea, nav, article, ol, u
     border-radius: 10px;
     
 }
+body{
+    background-color: black;
+}
 
 #commentBox{
+    box-shadow: 0 0 50px 10px white;
+
     /* border-radius: 1px; */
     border: 5px solid black;
     background-color:chartreuse;
     height: 700px;
     width: 1000px;
-    margin: 0 auto 100px auto;
+    margin: 100px auto;
     padding: 10px;
     display: flex;
     flex-flow: column;
@@ -89,7 +94,6 @@ h2{
 }
 .commentMessage{
     align-self: center;
-    /* width: 700px; */
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
@@ -123,10 +127,6 @@ button{
     cursor: pointer;
 }
 
-.deleteButton{
-}
-.editButton{
-}
 #addComment{
     border: black 3px solid;
 
@@ -136,25 +136,15 @@ button{
     background-color: aquamarine;
     display: flex;
 }
-input, textarea{
-    border-radius: 12px;
-    
-}
-/* #color{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    height: 75px;
-    width: 10px;
-} */
 
 #username{
+    border-radius: 12px;
     height: 75px;
     width: 150px;
     font-size: 30px;
     font-family: 'Gemunu Libre', sans-serif;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    /* border-right: 0; */
     border: 0;
     padding: 0 10px;
     background-color:aquamarine;
@@ -183,11 +173,11 @@ input, textarea{
     border: 0;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
-    /* border: 1px solid gray; */
-    /* min-width: 10px; */
-    /* height: 40px; */
     width: 50px;
-
+}
+#submitButton:hover{
+    background-color:cornflowerblue;
+    
 }
 
 .editCommentMessage{
