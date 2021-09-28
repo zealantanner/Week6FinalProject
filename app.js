@@ -34,7 +34,7 @@ let message = $('#message');
 colorUsers();
 
 $('#submitButton').on('click', function() {
-    $('#commentSection').append(`
+    $('#commentSection').prepend(`
         <li class="comment">
             <div class="commentProfileText">
                 <img class="userPicture" src="images/user.png" alt="User.png">
