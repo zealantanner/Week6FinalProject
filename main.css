@@ -2,51 +2,94 @@ html, body, h1, h2, h3, h4, h5, h6, p, div, nav, article, ol, ul, li {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-}
+    list-style-type: none;
+    /* border: 1px solid black; */
+    border-radius: 10px;
 
-#extra{
-    display: flex;
 }
-#info{
-    margin: 73px 20px;
-}
-article{
-    margin: 0;
-    display: flex;
-}
-button{ 
-    height: 200px;
-    width: 200px;
-    font-size: 30px;
-    background-color: lightgray;
-    border-radius: 25px;
-    border-width: 5px;
-}
-#squareContainer{
-    margin: 0 auto 100px auto;
+#commentBox{
     border: 5px solid black;
     background-color: lime;
-    border-radius: 10px;
+    height: 700px;
+    width: 1000px;
+    margin: 0 auto 100px auto;
+    padding: 10px;
     display: flex;
-    height: 400px;
-    width: 400px;
-    flex-wrap: wrap;
+    flex-flow: column;
 }
-.square{
-    list-style-type: none;
-    height: 100px;
-    width: 100px;
-    /* height: 98px;
-    width: 98px;
-    border: 1px solid black; */
+#commentSection{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    border: 5px solid black;
+    background-color: green;
+    border-radius: 10px;
+    height: 600px;
+    overflow-y: auto;
+    padding:10px
+}
+.comment{
+    background-color: aqua;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    /* height: 50px; */
+    width: 940px;
+    max-width: 940px;
+    border-radius: 10px;
+    border: 1px solid black;
+    
+    display: flex;
+
+    
+}
+.commentProfileText{
+    display: flex;
+}
+.userPicture{
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+    background-color: azure;
+    border-radius: 100px;
+    align-self: center;
+}
+.commentMessage{
+    /* margin: 0 auto; */
 }
 
-.blue{
-    cursor:vertical-text;
-    background: fixed blue url(images/windows.jpeg) top center;
+.commentButtons{
+    display: flex;
 
 }
-.red{
-    cursor: text;
-    background: fixed red url(images/apple.jpeg) top center;
+.editComment, .deleteComment{
+    height: 40px;
+    width: 40px;
+    justify-self:flex-end;
+    background-size: cover;
+    
+}
+.clickIcon{
+    width: 20px;
+    height: 20px;
+    
+}
+button{ 
+    background-color: lightgray;
+    border-radius: 10px;
+    border-width: 2px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.deleteComment{
+}
+.editComment{
+}
+#addComment{
+    border-radius: 10px;
+    height: 75px;
+    margin-top: 10px;
+    background-color: aquamarine;
+    
 }
