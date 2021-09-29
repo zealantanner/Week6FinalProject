@@ -164,6 +164,10 @@ button{
     border: 0;
     background-color:aquamarine;
 }
+#message:focus, #username:focus{
+    /* border:100px black solid; */
+    outline: none;
+}
 
 #submitButton{
     background-color:royalblue;
@@ -176,7 +180,10 @@ button{
     background-color:cornflowerblue;
     
 }
-
+#submitButton:active{
+    border: 2px blueviolet solid;
+    
+}
 .editCommentMessage{
     width: auto;
     resize: none;
